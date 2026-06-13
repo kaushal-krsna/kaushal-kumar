@@ -1,51 +1,30 @@
 import React from 'react'
-import { EXPERIENCES } from '../constants'
 import { motion } from 'framer-motion'
+import { EXPERIENCES } from '../constants'
+import WorkExperienceBlock from './work/WorkExperienceBlock'
+
+const MotionHeading = motion.h2
 
 const Experience = () => {
     return (
-        <div className='pb-4'>
-            <motion.h2
+        <section className='pb-24'>
+            <MotionHeading
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 0.5 }}
-                className='my-20 text-center text-4xl'>Work Experience</motion.h2>
-            <div>
-                {EXPERIENCES.map((experience, index) => (
-                    <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
-                        <motion.div
-                            whileInView={{ opacity: 1, x: 0 }}
-                            initial={{ opacity: 0, x: -100 }}
-                            transition={{ duration: 1 }}
-                            className='w-full lg:w-1/4'>
-                            <p className='mb-2 text-sm text-stone-400'>{experience.year}</p>
-                        </motion.div>
-                        <motion.div
-                            whileInView={{ opacity: 1, x: 0 }}
-                            initial={{ opacity: 0, x: 100 }}
-                            transition={{ duration: 1 }}
-                            className='w-full max-w-xl lg:w-3/4'>
-                            <h3 className='mb-2 font-semibold'> {experience.role} - {" "}
-                                <span className='text-sm text-stone-500'> {experience.company}</span>
-                            </h3>
-                            <ul className='mb-4 text-stone-400 list-disc list-inside space-y-1'>
-                                {experience.description.map((point, pointIndex) => (
-                                    <li key={pointIndex}>{point}</li>
-                                ))}
-                            </ul>
-                            <div className="flex flex-wrap gap-2">
-                                {experience.technologies.map((tech, index) => (
-                                    <span className='rounded bg-stone-900 px-3 py-1 text-sm font-medium text-stone-300'
-                                        key={index}>
-                                        {tech}
-                                    </span>
-                                ))}
-                            </div>
-                        </motion.div>
-                    </div>
+                className='my-20 text-center text-4xl'>Work Experience</MotionHeading>
+
+            <div className='space-y-12'>
+                {EXPERIENCES.map((experience) => (
+                    <WorkExperienceBlock
+                        key={`${experience.company}-${experience.role}-${experience.year}`}
+                        experience={experience}
+                        // Experience data decides whether this block has system cards.
+                        systems={experience.workSystems ?? []}
+                    />
                 ))}
             </div>
-        </div>
+        </section>
     )
 }
 

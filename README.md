@@ -1,12 +1,29 @@
-# React + Vite
+# Kaushal Kumar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Visit the website here: [https://kaushalkrsna.in/](https://kaushalkrsna.in/)
 
-Currently, two official plugins are available:
+Kaushal Kumar is my portfolio website to display my software engineering experience, production systems, projects, and technical work.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How To Use
 
-## Expanding the ESLint configuration
+### Work Experience
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The Work Experience section shows the roles I have worked in and the systems I built during those roles.
+
+Some work cards are informational only. If a card has an `Open details` button, you can click it to open a dedicated detail page for that system.
+
+### Projects
+
+The Projects section lists selected products and applications I have built. Click a project title to visit the live project.
+
+### Resume
+
+Use the `Download Resume` button on the homepage to open my latest resume.
+
+### Contact
+
+Use the Contact section at the bottom of the site to reach me by email.
+
+## Contribution
+
+All pull requests and issues will be looked over. This site is meant to show my software engineering and product-building experience, so I treat pull requests as feedback and improvement suggestions.

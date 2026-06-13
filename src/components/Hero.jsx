@@ -3,6 +3,13 @@ import profilePic from "../assets/kpp2.png"
 import { HERO_CONTENT } from '../constants'
 import { motion } from "framer-motion"
 
+const MotionDiv = motion.div
+const MotionHeading = motion.h2
+const MotionImage = motion.img
+const MotionLink = motion.a
+const MotionParagraph = motion.p
+const MotionSpan = motion.span
+
 const containerVariants = {
     hidden: { opacity: 0, x: -100 },
     visible: {
@@ -26,7 +33,7 @@ const Hero = () => {
             <div className='flex flex-wrap lg:flex-row-reverse'>
                 <div className='w-full lg:w-1/2'>
                     <div className='flex justify-center lg:p-8'>
-                        <motion.img
+                        <MotionImage
                             src={profilePic}
                             alt='Kaushal Kumar'
                             className='border border-stone-900 rounded-3xl'
@@ -38,30 +45,30 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className='w-full lg:w-1/2'>
-                    <motion.div
+                    <MotionDiv
                         initial="hidden"
                         animate="visible"
                         variants={containerVariants}
                         className='flex flex-col items-center lg:items-start mt-10'>
-                        <motion.h2
+                        <MotionHeading
                             variants={childVariants}
                             className='pb-2 text-4xl tracking-tighter lg:text-8xl'>Kaushal Kumar
-                        </motion.h2>
-                        <motion.span variants={childVariants} className='bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tight text-transparent'>Founding Software Engineer</motion.span>
-                        <motion.p variants={childVariants}
+                        </MotionHeading>
+                        <MotionSpan variants={childVariants} className='bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tight text-transparent'>Founding Software Engineer</MotionSpan>
+                        <MotionParagraph variants={childVariants}
                             className='my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter'>
                             {HERO_CONTENT}
-                        </motion.p>
-                        <motion.a
+                        </MotionParagraph>
+                        <MotionLink
                             variants={childVariants}
                             href='https://storage.googleapis.com/acciojob-user-content/resumes/f7e8a5c9-7c1b-48d8-b185-10b278c18668-Kaushal_CV.pdf'
                             target='_blank'
                             rel='noopener noreferrer'
                             download
                             className='bg-white rounded-full p-4 text-sm text-stone-800 mb-10'
-                        >Download Resume</motion.a>
+                        >Download Resume</MotionLink>
 
-                    </motion.div>
+                    </MotionDiv>
 
                 </div>
 
