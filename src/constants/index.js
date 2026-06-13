@@ -6,7 +6,7 @@ import project5 from "../assets/projects/project5.PNG";
 import veenoImg from "../assets/projects/veeno png.png";
 import farmAuraImg from "../assets/projects/farmaura.svg";
 
-export const HERO_CONTENT = `I'm a Founding Software Engineer focused on building high-performance, scalable web applications using serverless architecture. With hands-on experience in React, Redux Toolkit, Next.js, FastAPI, AWS Lambda, DynamoDB, and TypeScript. I specialize in real-time systems, OAuth 2.0 integrations, and AI-powered features using the Gemini Live API and LangChain. I thrive on solving real-world problems with clean, efficient code—known for taking ownership and getting things done.`;
+export const HERO_CONTENT = `A Software Engineer learning differently by building real systems, documenting the process, and turning work into visible proof of trust.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With hands-on experience in modern technologies including React, Next.js, FastAPI, AWS Lambda, DynamoDB, PostgreSQL, and MongoDB. My journey in web development is driven by a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions.`;
 
