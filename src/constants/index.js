@@ -1,10 +1,10 @@
 import project1 from "../assets/projects/loquax.svg";
 import project2 from "../assets/projects/BiteRush.svg";
-import project3 from "../assets/logo.png";
 import project4 from "../assets/projects/chat-bot.png";
 import project5 from "../assets/projects/project5.PNG";
 import veenoImg from "../assets/projects/veeno png.png";
 import farmAuraImg from "../assets/projects/farmaura.svg";
+import { BIZORA_WORK_SYSTEMS } from "./work";
 
 export const HERO_CONTENT = `A Software Engineer learning differently by building real systems, documenting the process, and turning work into visible proof of trust.`;
 
@@ -15,6 +15,9 @@ export const EXPERIENCES = [
     year: "June 2025 - Present",
     role: "Founding Software Engineer",
     company: "Bizora",
+    summary: "At Bizora, I worked as a product-minded founding engineer — turning ambiguous problems into shipped systems. I researched new technical areas, designed cost-conscious solutions, built fast, and iterated based on user behavior. My work focused on creating reliable product experiences without over-engineering or slowing down delivery.",
+    // Attach the exact system collection owned by this role.
+    workSystems: BIZORA_WORK_SYSTEMS,
     description: [
       "Architected a secure OAuth 2.0 microservice using Python, AWS Lambda, and API Gateway, implementing RFC 7636 (PKCE) to eliminate security vulnerabilities",
       "Designed scalable Terraform infrastructure with DynamoDB composite keys and GSI to optimize query patterns",
