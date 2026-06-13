@@ -49,22 +49,22 @@ export const BIZORA_WORK_SYSTEMS = [
     ],
     showRedirectButton: false,
   },
-  {
-    slug: 'file-upload-management',
-    type: 'Product Feature',
-    title: 'Real-Time File Upload Manager',
-    feature: 'Reliable upload lifecycle UX',
-    description:
-      'Built a centralized upload experience that handles validation, presigned uploads, WebSocket processing feedback, timeout handling, cache invalidation, and failure states across assistant and Vault workflows.',
-    highlights: [
-      'Client-side validation',
-      'Presigned uploads',
-      'WebSocket status updates',
-      'Timeout handling',
-      'Shared upload pipeline',
-    ],
-    showRedirectButton: false,
-  },
+  // {
+  //   slug: 'file-upload-management',
+  //   type: 'Product Feature',
+  //   title: 'Real-Time File Upload Manager',
+  //   feature: 'Reliable upload lifecycle UX',
+  //   description:
+  //     'Built a centralized upload experience that handles validation, presigned uploads, WebSocket processing feedback, timeout handling, cache invalidation, and failure states across assistant and Vault workflows.',
+  //   highlights: [
+  //     'Client-side validation',
+  //     'Presigned uploads',
+  //     'WebSocket status updates',
+  //     'Timeout handling',
+  //     'Shared upload pipeline',
+  //   ],
+  //   showRedirectButton: false,
+  // },
   {
     slug: 'notifications',
     type: 'Backend Microservice',
