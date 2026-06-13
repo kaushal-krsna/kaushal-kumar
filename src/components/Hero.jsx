@@ -1,5 +1,5 @@
 import React from 'react'
-import profilePic from "../assets/kpp.jpg"
+import profilePic from "../assets/kpp2.png"
 import { HERO_CONTENT } from '../constants'
 import { motion } from "framer-motion"
 
