@@ -2,11 +2,11 @@ import React from 'react'
 import profilePic from "../assets/kpp2.png"
 import { HERO_CONTENT } from '../constants'
 import { motion } from "framer-motion"
+import SkeomorphicButton from './ui/SkeomorphicButton'
 
 const MotionDiv = motion.div
 const MotionHeading = motion.h2
 const MotionImage = motion.img
-const MotionLink = motion.a
 const MotionParagraph = motion.p
 const MotionSpan = motion.span
 
@@ -59,14 +59,16 @@ const Hero = () => {
                             className='my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter'>
                             {HERO_CONTENT}
                         </MotionParagraph>
-                        <MotionLink
-                            variants={childVariants}
-                            href='https://storage.googleapis.com/acciojob-user-content/resumes/f7e8a5c9-7c1b-48d8-b185-10b278c18668-Kaushal_CV.pdf'
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            download
-                            className='bg-white rounded-full p-4 text-sm text-stone-800 mb-10'
-                        >Download Resume</MotionLink>
+                        <MotionDiv variants={childVariants} className='mb-10'>
+                            <SkeomorphicButton
+                                href='https://storage.googleapis.com/acciojob-user-content/resumes/f7e8a5c9-7c1b-48d8-b185-10b278c18668-Kaushal_Kumar_Resume.pdf'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                download
+                            >
+                                Download Resume
+                            </SkeomorphicButton>
+                        </MotionDiv>
 
                     </MotionDiv>
 

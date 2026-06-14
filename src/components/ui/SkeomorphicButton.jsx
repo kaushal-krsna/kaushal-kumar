@@ -13,6 +13,7 @@ const sizeClasses = {
 const SkeomorphicButton = ({
   children,
   className = '',
+  href,
   icon: Icon = ArrowUpRight,
   size = 'md',
   to,
@@ -20,6 +21,15 @@ const SkeomorphicButton = ({
   ...props
 }) => {
   const classes = `${baseClasses} ${sizeClasses[size]} ${className}`.trim()
+
+  if (href) {
+    return (
+      <a href={href} className={classes} {...props}>
+        <span>{children}</span>
+        {Icon ? <Icon size={17} strokeWidth={2.5} /> : null}
+      </a>
+    )
+  }
 
   if (to) {
     return (
